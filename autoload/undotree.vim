@@ -64,7 +64,7 @@ let s:helpmore = ['"    ===== Marks ===== ',
 if !g:undotree_HelpLine
     let s:helpless = []
 else
-    let s:helpless = ['" Press ? for help.']
+    let s:helpless = ['" Press \? for help.']
 endif
 
 "Custom key mappings: add this function to your vimrc.
@@ -79,7 +79,7 @@ endif
 " Keymap
 let s:keymap = []
 " action, key, help.
-let s:keymap += [['Help','?','Toggle quick help']]
+let s:keymap += [['Help','\?','Toggle quick help']]
 let s:keymap += [['Close','q','Close undotree panel']]
 let s:keymap += [['FocusTarget','<tab>','Set Focus back to the editor']]
 let s:keymap += [['ClearHistory','C','Clear undo history (with confirmation)']]
